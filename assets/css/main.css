@@ -72,6 +72,16 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* jQuery UI */
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+		border-color: #4a0505;
+	}
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+		background: #ac0b0b;
+	}
+
 /* Basic */
 
 	html {
