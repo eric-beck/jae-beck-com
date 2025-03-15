@@ -198,6 +198,11 @@ input, select, textarea {
 		top: -0.5em;
 	}
 
+	.large-letter {
+		font-size: 2.5em;
+		font-weight: bold;
+	}
+
 	hr {
 		border: 0;
 		border-bottom: solid 2px #efefef;
