@@ -2653,6 +2653,11 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		#header .logo {
+			margin: 0 0 1em 0;
+			max-width: 100%;
+		}
+
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
