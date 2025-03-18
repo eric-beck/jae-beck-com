@@ -2646,7 +2646,7 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#header h1 {
+		#header .message {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 1.35em;
 			line-height: 1.75em;
@@ -3021,11 +3021,11 @@ input, select, textarea {
 				width: 30%;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.25em;
 				}
 
-					#header h1 br {
+					#header .message br {
 						display: none;
 					}
 
@@ -3085,11 +3085,11 @@ input, select, textarea {
 				display: block;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.75em;
 				}
 
-					#header h1 br {
+					#header .message br {
 						display: inline;
 					}
 
@@ -3180,7 +3180,7 @@ input, select, textarea {
 				padding: 2.25em 1.5em;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.35em;
 				}
 
@@ -3224,7 +3224,7 @@ input, select, textarea {
 				padding: 4.5em 1.5em;
 			}
 
-				#header h1 br {
+				#header .message br {
 					display: none;
 				}
 
