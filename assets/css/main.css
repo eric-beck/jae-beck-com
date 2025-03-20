@@ -72,6 +72,16 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* jQuery UI */
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+		border-color: #4a0505;
+	}
+
+	.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+		background: #ac0b0b;
+	}
+
 /* Basic */
 
 	html {
@@ -186,6 +196,11 @@ input, select, textarea {
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
+	}
+
+	.large-letter {
+		font-size: 2.5em;
+		font-weight: bold;
 	}
 
 	hr {
@@ -2631,11 +2646,16 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#header h1 {
+		#header .message {
 			color: rgba(255, 255, 255, 0.5);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
+		}
+
+		#header .logo {
+			margin: 0 0 1em 0;
+			max-width: 100%;
 		}
 
 		#header .image.avatar {
@@ -3001,11 +3021,11 @@ input, select, textarea {
 				width: 30%;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.25em;
 				}
 
-					#header h1 br {
+					#header .message br {
 						display: none;
 					}
 
@@ -3065,11 +3085,11 @@ input, select, textarea {
 				display: block;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.75em;
 				}
 
-					#header h1 br {
+					#header .message br {
 						display: inline;
 					}
 
@@ -3160,7 +3180,7 @@ input, select, textarea {
 				padding: 2.25em 1.5em;
 			}
 
-				#header h1 {
+				#header .message {
 					font-size: 1.35em;
 				}
 
@@ -3204,7 +3224,7 @@ input, select, textarea {
 				padding: 4.5em 1.5em;
 			}
 
-				#header h1 br {
+				#header .message br {
 					display: none;
 				}
 
