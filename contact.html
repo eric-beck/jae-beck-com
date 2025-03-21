@@ -45,12 +45,15 @@
 									placeholder="Name" /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
 									placeholder="Email" /></div>
+							<div class="col-6 col-12-xsmall"><input type="phone" name="phone" id="phone"
+									placeholder="Phone" /></div>
 							<div class="col-12"><textarea name="message" id="message" placeholder="Message"
 									rows="4"></textarea></div>
 						</div>
 					</form>
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" /></li>
+						<li><button type="submit" class="button primary" onclick="sendEmail()">Send Message</button>
+						</li>
 					</ul>
 				</div>
 				<div class="col-4 col-12-small">
@@ -84,9 +87,12 @@
 				<li><a href="#" class="icon solid fa-chart-line"><span class="label">Neighborhood Reports</span></a>
 				</li>
 				<li><a href="#" class="icon solid fa-blog"><span class="label">Blogs</span></a></li>
-				<li><a href="https://www.facebook.com/jae.sook.beck" class="icon brands fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-				<li><a href="https://www.linkedin.com/in/jaebeck/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://www.pinterest.com/jae_beck/" class="icon brands fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+				<li><a href="https://www.facebook.com/jae.sook.beck" class="icon brands fa-facebook"
+						target="_blank"><span class="label">Facebook</span></a></li>
+				<li><a href="https://www.linkedin.com/in/jaebeck/" class="icon brands fa-linkedin" target="_blank"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://www.pinterest.com/jae_beck/" class="icon brands fa-pinterest" target="_blank"><span
+							class="label">Pinterest</span></a></li>
 				<li><a href="contact.html" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
@@ -108,6 +114,22 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		function sendEmail() {
+			const name = document.getElementById("name").value;
+			const email = document.getElementById("email").value;
+			const phone = document.getElementById("phone").value;
+			var message = document.getElementById("message").value;
+			message = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\n" + message;
+
+			// Construct mailto URL
+			const mailtoUrl = `mailto:jae.beck@live.com?subject=Message%20from%20${name}&body=${encodeURIComponent(message)}`;
+
+			// Open the email client
+			window.location.href = mailtoUrl;
+		}
+	</script>
+
 
 </body>
 
