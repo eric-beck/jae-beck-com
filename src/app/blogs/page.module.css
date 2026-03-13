@@ -125,7 +125,7 @@
     top: var(--spacing-md);
     right: var(--spacing-md);
     background-color: var(--color-accent);
-    color: var(--color-primary);
+    color: var(--color-surface);
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
