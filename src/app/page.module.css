@@ -1,0 +1,381 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  max-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(26, 35, 50, 0.4), rgba(26, 35, 50, 0.7));
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.1;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 300;
+  margin-bottom: var(--spacing-xl);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background: var(--color-surface);
+  border-radius: var(--border-radius-full);
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: var(--shadow-lg);
+}
+
+.searchIcon {
+  color: var(--color-text-muted);
+  margin: 0 var(--spacing-sm);
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0.75rem var(--spacing-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background-color: var(--color-accent);
+  color: #1a2332;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-full);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.searchButton:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Featured Cities Section */
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .sectionHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  margin-bottom: var(--spacing-xs);
+}
+
+.sectionDescription {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.viewAllLink {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.viewAllLink:hover {
+  color: var(--color-accent);
+}
+
+.citiesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (min-width: 640px) {
+  .citiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .citiesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cityCard {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  height: 400px;
+  display: block;
+  /* Setup for hover effects */
+}
+
+.cityImageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform var(--transition-slow);
+}
+
+.cityCard:hover .cityImageWrapper {
+  transform: scale(1.05);
+}
+
+.cityImage {
+  object-fit: cover;
+}
+
+.cityOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+  transition: background var(--transition-normal);
+}
+
+.cityCard:hover .cityOverlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(26, 35, 50, 0.2) 60%);
+}
+
+.cityContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--spacing-lg);
+  color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.cityName {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cityAction {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transition-normal);
+}
+
+.cityCard:hover .cityAction {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Agent Bio Section */
+.bioSection {
+  background-color: var(--color-surface);
+  padding: var(--spacing-xxl) 0;
+}
+
+.bioContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .bioContainer {
+    grid-template-columns: 5fr 7fr;
+    gap: var(--spacing-xxl);
+  }
+}
+
+.bioImageWrapper {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.bioImage {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: var(--spacing-lg);
+  right: -20px;
+  /* Overlap effect slightly, requires parent overflow visible if using, else stick inside */
+  right: var(--spacing-lg);
+  background-color: var(--color-accent);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #1a2332;
+}
+
+.badgeNumber {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.badgeText {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bioContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.bioTitle {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin: 0;
+}
+
+.bioSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin-top: -0.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.bioText {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.bioActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.85rem 2rem;
+  border-radius: var(--border-radius-full);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.primaryButton {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.primaryButton:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.secondaryButton:hover {
+  background-color: var(--color-background);
+}

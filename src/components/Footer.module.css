@@ -1,0 +1,106 @@
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding-top: var(--spacing-xxl);
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .footerContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footerBrand {
+    max-width: 300px;
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-md);
+}
+
+.logoPrimary {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    color: var(--color-surface);
+    line-height: 1;
+}
+
+.logoSecondary {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    letter-spacing: 0.15em;
+    margin-top: 4px;
+}
+
+.license,
+.brokerage {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-top: var(--spacing-xs);
+}
+
+.footerLinksGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+}
+
+@media (min-width: 768px) {
+    .footerLinksGrid {
+        gap: var(--spacing-xxl);
+    }
+}
+
+.columnTitle {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-surface);
+    margin-bottom: var(--spacing-md);
+}
+
+.linkList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.linkList a {
+    color: var(--color-surface);
+    opacity: 0.8;
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+}
+
+.linkList a:hover {
+    color: var(--color-accent);
+    opacity: 1;
+}
+
+.footerBottom {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-surface);
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
