@@ -1,0 +1,184 @@
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+}
+
+.title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: var(--color-surface);
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--color-surface);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.bioGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xxl);
+}
+
+@media (min-width: 1024px) {
+    .bioGrid {
+        grid-template-columns: 360px 1fr;
+        align-items: start;
+    }
+}
+
+.bioImageCol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.bioImageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.bioImage {
+    object-fit: cover;
+}
+
+.credentialsCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.credentialsCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.credentialsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.credentialsList li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.credentialsList li svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+}
+
+.bioContent h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.bioContent p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 640px) {
+    .valuesGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.valueCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.valueCard h3 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.valueCard p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.valueIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-background);
+    border-radius: var(--border-radius-md);
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.ctaBanner {
+    margin-top: var(--spacing-xxl);
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.ctaBanner h3 {
+    color: var(--color-surface);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.ctaBanner p {
+    opacity: 0.85;
+    margin-bottom: var(--spacing-lg);
+}
+
+.ctaButton {
+    display: inline-block;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    padding: 0.75rem 2rem;
+    border-radius: var(--border-radius-full);
+    font-weight: 600;
+    transition: opacity var(--transition-fast);
+}
+
+.ctaButton:hover {
+    opacity: 0.9;
+}
