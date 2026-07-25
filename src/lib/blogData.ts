@@ -38,7 +38,7 @@ export const BLOGS: BlogPost[] = [
     title: "Understanding the Buyer Representation Agreement",
     excerpt: "Recent changes in the real estate industry mean buyers will now sign representation agreements. Here is what you need to know.",
     date: "August 15, 2024",
-    image: "/images/contract.webp", // Mock image reuse
+    image: "/images/contract.webp",
     category: "Real Estate Advice",
     content: `
       <h2>What is a Buyer Representation Agreement?</h2>
@@ -62,7 +62,7 @@ export const BLOGS: BlogPost[] = [
     title: "Spooktacular Halloween Decorating Ideas",
     excerpt: "Transform your Orange County home into a festive autumn masterpiece with these simple DIY Halloween tips.",
     date: "October 1, 2023",
-    image: "/images/door.webp", // Mock image
+    image: "/images/door.webp",
     category: "Home & Lifestyle",
     content: `
       <h2>Embrace the Autumn Vibe</h2>
@@ -80,8 +80,8 @@ export const BLOGS: BlogPost[] = [
     title: "The Spring Real Estate Portfolio Review",
     excerpt: "Spring is the perfect time to evaluate your real estate investments. Are they performing as expected?",
     date: "April 5, 2024",
-    image: "/images/portfolio.webp", // Mock image
-    category: "Market Updates",
+    image: "/images/portfolio.webp",
+    category: "Real Estate Advice",
     content: `
       <h2>Why Spring?</h2>
       <p>As we enter the busiest season for real estate, it's crucial to understand where your portfolio stands. Market values in Orange County have shifted, and you might have more equity than you realize.</p>
@@ -98,7 +98,7 @@ export const BLOGS: BlogPost[] = [
     title: "8 Tips to Downsize Your House",
     excerpt: "Downsizing your house can be a smart move for many reasons. You might want to save money, simplify your life, or move to a more suitable location.",
     date: "March 10, 2024",
-    image: "/images/door.webp",
+    image: "/images/bed.webp",
     category: "Real Estate Advice",
     content: `
       <p>Downsizing your house can be a smart move for many reasons. You might want to save money, simplify your life, or move to a more suitable location. Whatever your motivation, downsizing can have many benefits, but it also requires careful planning and preparation.</p>
@@ -136,7 +136,7 @@ export const BLOGS: BlogPost[] = [
     title: "How to Build a Greenhouse",
     excerpt: "A greenhouse is a terrific way to grow plants all year round, regardless of the weather conditions. A greenhouse creates a microclimate that is ideal for plant growth.",
     date: "May 12, 2024",
-    image: "/images/door.webp",
+    image: "/images/neighborhood.jpg",
     category: "Home & Lifestyle",
     content: `
       <p>A greenhouse is a terrific way to grow plants all year round, regardless of the weather conditions. A greenhouse creates a microclimate that is ideal for plant growth, by trapping heat and light from the sun. You can use a greenhouse to start seeds, propagate cuttings, or grow crops that need a longer or warmer season.</p>
@@ -155,7 +155,7 @@ export const BLOGS: BlogPost[] = [
     title: "How to Decorate a Christmas Tree",
     excerpt: "Christmas is a wonderful time of the year, and one of the most iconic symbols of this festive season is the Christmas tree. Here are some steps on how to decorate a Christmas tree like a professional.",
     date: "December 1, 2023",
-    image: "/images/door.webp",
+    image: "/images/christmas.webp",
     category: "Home & Lifestyle",
     content: `
       <p>Christmas is a wonderful time of the year, and one of the most iconic symbols of this festive season is the Christmas tree. But how do you choose the perfect tree for your home, how do you set it up, and how do you decorate it for the holiday? Here are some steps on how to decorate a Christmas tree like a professional.</p>
@@ -174,7 +174,7 @@ export const BLOGS: BlogPost[] = [
     title: "How to Mount a Flagpole on Your House",
     excerpt: "If you want to display your patriotism or support for a cause by flying a flag on your house, you will need to mount a flagpole on your house.",
     date: "July 2, 2024",
-    image: "/images/door.webp",
+    image: "/images/flag.jpg",
     category: "Home & Lifestyle",
     content: `
       <p>If you want to display your patriotism or support for a cause by flying a flag on your house, you will need to mount a flagpole on your house. This is not an arduous task, but it does require some planning and preparation. Here are the steps you need to follow to mount a flagpole on your house.</p>
@@ -212,7 +212,7 @@ export const BLOGS: BlogPost[] = [
     title: "How to Set a Table for Different Occasions",
     excerpt: "Setting a table can be a simple or a complex task, depending on the occasion and the level of formality you want to achieve.",
     date: "November 20, 2023",
-    image: "/images/door.webp",
+    image: "/images/table.jpg",
     category: "Home & Lifestyle",
     content: `
       <p>Setting a table can be a simple or a complex task, depending on the occasion and the level of formality you want to achieve. Whether you are hosting a casual brunch, an informal dinner or a formal banquet, there are some basic guidelines to follow for creating a proper table setting.</p>
@@ -229,7 +229,7 @@ export const BLOGS: BlogPost[] = [
     title: "How to Sustain Exercise",
     excerpt: "One of the most common resolutions for the new year is to exercise more and improve one's health and fitness.",
     date: "January 5, 2024",
-    image: "/images/door.webp",
+    image: "/images/crystal-cove.jpg",
     category: "Home & Lifestyle",
     content: `
       <p>One of the most common resolutions for the new year is to exercise more and improve one's health and fitness. Exercise is one of the best things you can do for your health and well-being. However, many people struggle to stick to their goals and end up giving up or losing motivation.</p>
@@ -248,7 +248,7 @@ export const BLOGS: BlogPost[] = [
     title: "Preparing to Sell",
     excerpt: "Selling your home doesn't just mean hiring a realtor to stick a sign out front. There are a lot of preparations you should make to ensure you get the best offer possible in the shortest time.",
     date: "June 10, 2024",
-    image: "/images/contract.webp",
+    image: "/images/door.webp",
     category: "Real Estate Advice",
     content: `
       <p>Selling your home doesn't just mean hiring a realtor to stick a sign out front. There are a lot of preparations you should make to ensure you get the best offer possible in the shortest time.</p>
@@ -284,7 +284,7 @@ export const BLOGS: BlogPost[] = [
     title: "Relocating to the Big City",
     excerpt: "Moving from a small town or suburb to a large city can be an intimidating proposition. Here are a few tips to help make your move as painless as possible.",
     date: "May 20, 2024",
-    image: "/images/contract.webp",
+    image: "/images/bg.jpg",
     category: "Real Estate Advice",
     content: `
       <p>Moving from a small town or suburb to a large city can be an intimidating proposition. Here are a few tips to help make your move as painless as possible.</p>
